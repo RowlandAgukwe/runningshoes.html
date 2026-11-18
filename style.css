@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+:root{
+    --display-flex: flex;
+    --font-small-30px: 30px;
+    --font-large: 24px;
+    --jsc: space-between;
+    --align-center: center;
+    --txt-align:center;
+
+}
+
+header, 
+.nav-link,
+.eren_content, 
+.service_content, 
+.signature_container,
+.container_border, 
+.herocontent {
+    display: var(--display-flex);
+} 
+
+header,
+.herocontent {
+    align-items: var(--align-center);
+}
+header,
+.herocontent,
+.text-title,
+.text-heading,
+.read_btn,
+.blaze_runner h3,
+.blaze_runner p,
+.Nike_runner h3,
+.Nike_runner p,
+.runners h3,
+.runners p,
+.class_btn,
+.border_box,
+.box_border,
+.boxes,
+.icon_btn,
+.contact_session{
+    text-align: var(--txt-align);
+}
+
+
+header{
+    display: var(--display-flex);
+    justify-content: var(--jsc);
+    padding: 10px 2rem;
+    text-align: var(--txt-align);
+    align-items: var(--align-center);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    
+}
+.logo{
+    color: black;
+}
+.nav-link{
+    display: var(--display-flex);
+    gap: 2rem;
+}
+
+a{
+    text-decoration: 0;
+    color: black;
+}
+.order-btn button{
+    border: 0;
+    background-color: pink;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.order-btn button:hover{
+    background-color: rgb(168, 132, 138);
+}
+
+/* Hero-Section  */
+.heroBackground{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("./images/backgroundimage.jpg");
+    min-height:100vh;
+    Background-size:cover;
+    background-position:center ;
+}
+.herocontent{
+    /* display: flex; */
+    display: var(--display-flex);
+    flex-direction: column;
+    justify-content: center;
+    align-items: var(--align-center);
+    height: 80vh;
+}
+.herocontent{
+    color: white;
+    font-size: var(--font-large);
+    text-align: var(--txt-align);
+    font-family: "Roboto", sans-serif;
+}
+.learn-btn button{
+    border: 0;
+    background-color: skyblue;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.learn-btn button:hover{
+    background-color: rgb(55, 65, 69);
+}
+
+/* Service section */
+.service_content{
+    max-width: 1200px;
+    /* display: flex; */
+    display: var(--display-flex);
+    margin: 2rem auto;
+    gap: 2rem;
+    width:100%;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.service_image,
+.content{
+    flex: 1;
+    min-width: 0;
+}
+
+.service_image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.text-title{
+    font-family: "Roboto", sans-serif;
+    text-align: var(--txt-align);
+    font-size: var(--font-small-30px);
+    color: pink;
+    margin-top: 2rem;
+}
+
+.text-heading{
+  font-family: "Roboto", sans-serif;
+  text-align: var(--txt-align);  
+  font-size: 35px;
+  margin-top: 1rem;
+}
+
+.text-paragraph{
+    font-family: "Roboto", sans-serif;
+    color: rgb(138, 115, 115);
+    
+    padding: 1rem 0;
+}
+
+.read_btn{
+text-align: var(--txt-align);
+font-family: "Roboto", sans-serif;
+}
+
+.read_btn button{
+    border: 0;
+    background-color: skyblue;
+    padding: 15px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    
+}
+
+.read_btn button:hover{
+    background-color: rgb(115, 133, 141);
+}
+
+/* Signature section */
+
+.signature_div{
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+.signature_div h1{
+    font-size: 3rem;
+    color: skyblue;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+.signature_container{
+    /* display: flex; */
+    display: var(--display-flex);
+    margin-top: 2rem;
+    gap: 1rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container_box{
+    border: 5px solid white;
+    padding: 0 1rem;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 0;
+}
+.Box_image img{
+    width: 100%;
+    object-fit: cover;
+    height: clamp(220px, 30vw, 420px);
+    border-radius: 10px;
+}
+.blaze_runner h3{
+    color: aquamarine;
+    font-size: medium;
+    text-align: var(--txt-align);
+}
+.blaze_runner p{
+    text-align: var(--txt-align);
+}
+
+.Box{
+    border: 10px solid white;
+    padding: 0 1rem;
+    flex: 1;
+    min-width: 0;
+}
+.Nike_runner h3{
+    color: aquamarine;
+    font-size: medium;
+    text-align: var(--txt-align);
+}
+.Nike_runner p{
+    text-align: var(--txt-align);
+}
+
+.runner{
+    border: 10px solid white;
+    padding: 0 1rem;
+    flex: 1;
+    min-width: 0;
+}
+.runners h3{
+    color: aquamarine;
+    font-size: medium;
+    text-align: var(--txt-align);
+}
+.runners p{
+    text-align: var(--txt-align);
+}
+.class_btn{
+text-align: var(--txt-align);
+font-family: "Roboto", sans-serif;
+}
+.class_btn button{
+    border: 0;
+    margin-top: 1rem;
+    padding: 1rem 4rem;
+    background-color: skyblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.class_btn button:hover{
+    background-color: rgb(131, 154, 163);
+}
+
+/* wholesale section */
+.wholesale{
+    max-width: 1500px;
+    margin-top: 1rem;
+    background-color: skyblue;
+    border: 5px solid skyblue;
+    min-height: 100vh;
+    height: auto;
+    padding: 0 2rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.retail{
+    margin-top: 2rem;
+    font-size: 12px;
+    color: white;
+}
+.wholesale_container{
+margin-top: 1rem;
+color: white;
+
+}
+.wholesale_container h1{
+    font-size: clamp(2rem, 5vw, 50px);
+    font-weight: 1000;
+    font-family: "Roboto", sans-serif;
+}
+.wholesale_container p{
+    margin-top: 1rem;
+    color: white;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+.container_border{
+    /* display: flex; */
+    display: var(--display-flex);
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.border_box{
+    padding: 3rem 1rem;
+    border: 2px solid white;
+    text-align: var(--txt-align);
+    margin-top: 2rem;
+    border-radius: 10px;
+    flex: 1;
+}
+.box_border{
+    padding: 3rem 1rem;
+    border: 2px solid white;
+    text-align: var(--txt-align);
+    margin-top: 2rem;
+    border-radius: 10px;
+    flex: 1;
+}
+.boxes{
+    padding: 3rem 1rem;
+    border: 2px solid white;
+    text-align: var(--txt-align);
+    margin-top: 2rem;
+    border-radius: 10px;
+    flex: 1;
+}
+.icon{
+    color: rgb(86, 42, 42);
+    font-family: "Roboto", sans-serif;
+}
+.icon_btn{
+text-align: var(--txt-align);
+font-family: "Roboto", sans-serif;
+margin-top: 3rem;
+}
+.icon_btn button{
+    border: 0;
+    margin-top: 1rem;
+    padding: 1rem 4rem;
+    background-color: floralwhite;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.icon_btn button:hover{
+    background-color: rgb(114, 104, 83)
+}
+
+/* profesional section */
+.eren {
+    max-width: 1500px;
+    margin-top: 2rem;
+    background-color: white;
+    border: 5px solid white;
+    min-height: 0;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+}
+.mikasa {
+    border: 2px solid white;
+    margin-top: 4rem;
+    width: min(500px, 100%);
+    padding: 3rem 3rem;
+    height: auto;
+    flex: 1;
+}
+.mikasa_text{
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: "Roboto", sans-serif;
+    color: skyblue;
+}
+.mikasa_content{
+    
+    color: skyblue;
+    margin-top: 2rem;
+}
+
+.deliveries{
+    
+    color: skyblue;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.quality{
+    color: skyblue;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.prem_service{
+  color: skyblue;
+    gap: 1rem;
+    margin-top: 1rem;  
+}
+
+.last_Img img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+}
+.eren_content > div:last-child{
+    flex: 1;
+    min-width: 0;
+}
+.eren_content{
+    /* display: flex; */
+    display: var(--display-flex);
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.contact_session{
+    max-width: 1500px;
+    margin-top: 1rem;
+    background-color: skyblue;
+    border: 5px solid skyblue;
+    min-height: 0;
+    height: auto;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: var(--txt-align);
+}
+
+.Contant{
+    background-color: aqua;
+    padding: 2rem 2rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.contact-type{
+    padding: 16px 0;
+}
+
+input[type="text"]{
+    padding:10px;
+    width:100%;
+    border: 2px solid pink;
+    border-radius: 10px;
+}
+input[type="email"]{
+    padding:10px;
+    width:100%;
+    border: 2px solid pink;
+    border-radius: 10px;
+}
+.submit_btn{
+    max-width: 100px;
+    margin:0 auto;
+    color: red
+}
+.submit_btn button{
+    padding:14px 20px;
+    border-radius:10px;
+    cursor:pointer
+}
+.submit_btn button:hover{
+background-color: rgb(213, 153, 153);
+}
+#ancor_tag a{
+    text-decoration: 0;
+    color: black;
+    text-align: left;
+}
+
+
+@media (max-width: 768px){
+    header{
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+    }
+
+    header > div:nth-child(2){
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-link{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.25rem;
+    }
+
+    .order-btn{
+        margin-left: auto;
+    }
+
+    .service_content,
+    .eren_content{
+        flex-direction: column;
+    }
+
+    .service_image,
+    .content,
+    .eren_content > div{
+        width: 100%;
+    }
+
+    .service_image img{
+        max-height: 55vh;
+    }
+
+    .signature_container{
+        flex-wrap: wrap;
+    }
+
+    .container_box,
+    .Box,
+    .runner{
+        flex: 1 1 45%;
+    }
+
+    .container_border{
+        flex-wrap: wrap;
+    }
+
+    .border_box,
+    .box_border,
+    .boxes{
+        flex: 1 1 40%;
+    }
+
+    .wholesale{
+        min-height: 0;
+    }
+
+    .mikasa{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px){
+    .heroBackground{
+        min-height: 75vh;
+    }
+
+    .herocontent{
+        min-height: 75vh;
+        height: auto;
+        padding: 5rem 1rem 2rem;
+        font-size: 1.25rem;
+    }
+
+    .signature_div h1{
+        font-size: 2rem;
+    }
+
+    .signature_container,
+    .container_border{
+        flex-direction: column;
+    }
+
+    .container_box,
+    .Box,
+    .runner,
+    .border_box,
+    .box_border,
+    .boxes{
+        flex: 1 1 auto;
+    }
+
+    .wholesale{
+        padding: 0 1rem 2rem;
+    }
+
+    .wholesale_container p{
+        font-size: 1rem;
+    }
+
+    .icon_btn button,
+    .class_btn button{
+        max-width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .contact_session{
+        padding: 1rem;
+    }
+}
